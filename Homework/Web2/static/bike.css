@@ -1,0 +1,22 @@
+h3 {
+    line-height: 1cm
+}
+input {
+    position: absolute;
+    left: 4cm;
+    height: 0.6cm;
+    width: 6cm
+}
+
+button {
+    font-style: inherit;
+    position: absolute;
+    left: 4cm;
+    color: red;
+    width: 2cm;
+    height: 1cm;
+    font-size: 16px
+}
+label {
+    color: blue
+}

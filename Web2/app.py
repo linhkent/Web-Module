@@ -9,8 +9,9 @@ def home():
         form = request.form
         t = form['title']
         l = form['link']
-        # return 'HOST'   
-  
+          
+        print (t,l)
+        return 'HOST' 
 
 if __name__ == '__main__':
     app.run(debug=True)
