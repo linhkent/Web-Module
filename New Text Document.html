@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        .login-box{
+            width: 300px;
+            padding: 40px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+        .login-box input[type = "text"]{
+            border:0;
+            background: none;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 2px solid #3498db;
+            padding: 14px 10px;
+            width: 200px;
+            outline: none;
+            color: black;
+            border-radius: 24px;
+            transition: 0.25s;
+        }
+        .login-box input[type = "text"]:focus{
+            width: 280px;
+            border-color: #2ecc71;
+        }
+        .login-box input[type = "submit"]{
+            border:0;
+            background: none;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 2px solid #2ecc71;
+            padding: 14px 40px;
+            outline: none;
+            color:black;
+            border-radius: 24px;
+            transition: 0.25s;
+            cursor: pointer;
+            }
+        .login-box input[type = "submit"]:hover{
+            background: #2ecc71;
+            }
+    </style>
+</head>
+<body>
+    <form class ="login-box" method="POST">
+        <fieldset style="width: 360px">
+            <legend>Bike Rental Service</legend>
+
+            <div class="textbox">
+                <label class="label1"><strong>Model</strong></label>
+                <input class="press" type="text" placeholder="e.g. Honda" name="model" autocomplete="off">
+            </div>
+
+            <div class="textbox">
+                <label class="label1"><strong>Daily fee</strong></label>
+                <input class="press" type="text" placeholder="VND" name="dailyFee" autocomplete="off">
+            </div>
+
+            <div class="textbox">
+                <label class="label1"><strong>Image</strong></label>
+                <input class="press" type="text" placeholder="e.g. http://hondaxemay" name="image" autocomplete="off">
+            </div>
+
+            <div class="textbox">
+                <label class="label1"><strong>Year</strong></label>
+                <input class="press" type="text" name="year" autocomplete="off">
+            </div>
+            <input class ="btn" type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
