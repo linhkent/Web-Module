@@ -11,6 +11,8 @@
         <h5>{{food.title}}</h5>
         <img src="{{food.link}}" alt="{{food.title}}">
         <a href="/food/{{food.id}}">detail</a>
+        <a href="/update_food/{{food.id}}">update</a>
     {% endfor %}
+    <a href="/add_food">Add food</a>
 </body>
 </html>
